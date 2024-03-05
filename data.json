@@ -1,22 +1,22 @@
 {
     "businesses": [
         {
-            "name": "Business 1",
+            "name": "TuneTree",
             "info": "This is the information and description for this business.",
-            "image": "https://freepngimg.com/thumb/logo/71766-logo-vector-design-illustration-phoenix-hd-image-free-png.png",
+            "image": "./images/tunetree.png",
+            "rating": 3
+        },
+        {
+            "name": "Crown Soles",
+            "info": "This is the information and description for this business.",
+            "image": "./images/crownsoles.png",
             "rating": 4
         },
         {
-            "name": "Business 2",
+            "name": "Sweet Crave",
             "info": "This is the information and description for this business.",
-            "image": "https://freepngimg.com/thumb/logo/69878-logo-graphic-design-ibm-download-free-image.png",
+            "image": "./images/sweetcrave.png",
             "rating": 2
-        },
-        {
-            "name": "Business 3",
-            "info": "This is the information and description for this business.",
-            "image": "https://freepngimg.com/thumb/ice_cream/3-ice-cream-png-image.png",
-            "rating": 5
       }
     ]
   }
