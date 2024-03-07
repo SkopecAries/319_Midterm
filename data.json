@@ -2,7 +2,7 @@
     "businesses": [
     {
       "name": "TuneTree",
-      "info": "This is the information and description for this business.",
+      "info": "TuneTree is your go-to digital music store and streaming service, offering an extensive library of songs from classic hits to the latest chart-toppers. Whether you're looking to buy your favorite album or stream music on-the-go, TuneTree provides high-quality audio and personalized playlists to enhance your music experience.",
       "image": "./images/tunetree.png",
       "rating": 3,
       "hours": {
@@ -13,11 +13,16 @@
         "Friday": "9:00 AM - 5:00 PM",
         "Saturday": "Closed",
         "Sunday":"Closed"
+      },
+      "contactInfo":{
+        "number": "+1 726-383-9283",
+        "email": "contact@TuneTree.com"
+
       }
         },
         {
             "name": "Crown Soles",
-            "info": "This is the information and description for this business.",
+            "info": "Step into style with Crown Soles, a boutique shoe store specializing in luxury and designer footwear for every occasion. From sleek sneakers to elegant heels, Crown Soles curates a unique collection that blends comfort with cutting-edge fashion, ensuring you walk with confidence and style.",
             "image": "./images/crownsoles.png",
             "rating": 4,
             "hours": {
@@ -28,12 +33,16 @@
              "Friday": "9:00 AM - 5:00 PM",
              "Saturday": "Closed",
              "Sunday":"Closed"
-            
+      },
+       "contactInfo":{
+        "number": "+1 732-434-2137",
+        "email": "contact@CrownSoles.com"
+
       }
         },
         {
             "name": "Sweet Crave",
-            "info": "This is the information and description for this business.",
+            "info": "Indulge your sweet tooth at Sweet Crave, a cozy bakery known for its mouthwatering selection of homemade desserts. From decadent chocolate cakes to fresh-baked pastries and artisanal bread, Sweet Crave offers a delightful array of treats made with love and the finest ingredients.",
             "image": "./images/sweetcrave.png",
             "rating": 2,
             "hours": {
@@ -44,7 +53,12 @@
              "Friday": "12:00 AM - 7:00 PM",
              "Saturday": "Closed",
              "Sunday":"Closed"
-            }
+            },
+            "contactInfo":{
+        "number": "+1 312-332-9845",
+        "email": "contact@SweetCrave.com"
+
+      }
             
       }
     ]
