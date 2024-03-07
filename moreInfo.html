@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./moreInfo.js"></script>
+    <title>Team 100 · Midterm Project</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+
+        /* New Page Details */
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+
+        .business-details {
+            flex: 0 0 auto;
+            border: 2px #712cf9 solid;
+            border-radius: 8px;
+            margin-right: 20px;
+            width: 100%;
+
+            margin-bottom: 20px;
+
+        }
+
+        .business-details img {
+            width: 100%;
+            height: auto;
+            border: 2px purple solid;
+        }
+
+        .business-name {
+            font-size: 3em;
+            margin: 0;
+
+        }
+
+        .location {
+            font-size: 1.5em;
+        }
+
+        .hoursbox {
+            border: 2px solid #712cf9;
+            border-radius: 8px;
+            padding: 10px;
+
+            margin-bottom: 10px;
+
+        }
+
+        .contactInfoBox {
+            border: 2px solid #712cf9;
+            border-radius: 8px;
+            padding: 10px;
+
+            margin-bottom: 10px;
+
+        }
+
+        .rating-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating-container .star {
+            color: gold;
+            font-size: 24px;
+            margin-right: 5px;
+
+        }
+
+        .rating-container .star.empty {
+            color: lightgray;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #6610f2;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" style="color: white;">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Businesses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="moreInfo.html?business=TuneTree">TuneTree</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="moreInfo.html?business=CrownSoles">Crown Soles</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="moreInfo.html?business=SweetCrave">Sweet Crave</a>
+                                </li>
+                        </li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">About us</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="25" height="25" fill="currentColor" class="bi bi-star-fill text-light"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img id="business-image" src="" alt="Business" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <h1 id="business-name">Business Name</h1>
+                <p id="business-info">Business Information</p>
+                <div id="business-hours" class="hoursbox">
+
+                </div>
+                <div id="business-contact" class="contactInfoBox">
+
+                </div>
+                <div id="rating-container" class="rating-container">
+
+                </div>
+            </div>
+        </div>
+        <!-- //adding similar businesses -->
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #6610f2;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" style="color: white;">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Businesses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="moreInfo.html?business=TuneTree">TuneTree</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="moreInfo.html?business=CrownSoles">Crown Soles</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="moreInfo.html?business=SweetCrave">Sweet Crave</a>
+                                </li>
+                        </li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">About us</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="25" height="25" fill="currentColor" class="bi bi-star-fill text-light"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container">
+            <div class="card">
+                <img id="compimage" src="images/crownsoles.png" alt="Crown Soles">
+            </div>
+            <div class="business-details">
+                <h1 class="business-name">Business Name</h1>
+                <p class="location">Location</p>
+
+                <div class="hoursbox">
+                    <h2 class="HoursT">Hours</h2>
+                    <p class="hours">
+                        Monday: 9:00 AM - 5:00 PM<br>
+                        Tuesday: 9:00 AM - 5:00 PM<br>
+                        Wednesday: 9:00 AM - 5:00 PM<br>
+                        Thursday: 9:00 AM - 5:00 PM<br>
+                        Friday: 9:00 AM - 5:00 PM<br>
+                        Saturday: Closed<br>
+                        Sunday:Closed
+                    </p>
+                </div>
+
+                <div class="contactInfoBox">
+                    <h2 class="contactinfotext">Contact Information</h2>
+                    <p class="contactinfo">
+                    <p class="numberAndEmail">
+                        <a class="number">+1-585-285-2849</a><br>
+                        <a class="email"> email@email.com</a>
+                    </p>
+                </div>
+                <div id="rating-container">
+
+                </div>
+            </div>
+        </div>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+    <script>
+
+    </script> -->

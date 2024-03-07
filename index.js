@@ -43,7 +43,7 @@ function loadBusinesses(myBusinesses) {
             <div class="d-flex justify-content-between align-items-center">
             </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-secondary">More info</a>
+            <a href="moreInfo.html?business=${encodeURIComponent(name)}" class="btn btn-secondary">More info</a>
         </div>
         </div>
         </div>

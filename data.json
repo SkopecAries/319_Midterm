@@ -1,22 +1,51 @@
 {
     "businesses": [
-        {
-            "name": "TuneTree",
-            "info": "This is the information and description for this business.",
-            "image": "./images/tunetree.png",
-            "rating": 3
+    {
+      "name": "TuneTree",
+      "info": "This is the information and description for this business.",
+      "image": "./images/tunetree.png",
+      "rating": 3,
+      "hours": {
+        "Monday": "9:00 AM - 5:00 PM",
+        "Tuesday": "9:00 AM - 5:00 PM",
+        "Wednesday": "9:00 AM - 5:00 PM",
+        "Thursday": "9:00 AM - 5:00 PM",
+        "Friday": "9:00 AM - 5:00 PM",
+        "Saturday": "Closed",
+        "Sunday":"Closed"
+      }
         },
         {
             "name": "Crown Soles",
             "info": "This is the information and description for this business.",
             "image": "./images/crownsoles.png",
-            "rating": 4
+            "rating": 4,
+            "hours": {
+             "Monday": "11:00 AM - 5:00 PM",
+             "Tuesday": "10:00 AM - 7:00 PM",
+             "Wednesday": "9:00 AM - 5:00 PM",
+             "Thursday": "9:00 AM - 5:00 PM",
+             "Friday": "9:00 AM - 5:00 PM",
+             "Saturday": "Closed",
+             "Sunday":"Closed"
+            
+      }
         },
         {
             "name": "Sweet Crave",
             "info": "This is the information and description for this business.",
             "image": "./images/sweetcrave.png",
-            "rating": 2
+            "rating": 2,
+            "hours": {
+             "Monday": "12:00 AM - 5:00 PM",
+             "Tuesday": "12:00 AM - 7:00 PM",
+             "Wednesday": "12:00 AM - 7:00 PM",
+             "Thursday": "12:00 AM - 7:00 PM",
+             "Friday": "12:00 AM - 7:00 PM",
+             "Saturday": "Closed",
+             "Sunday":"Closed"
+            }
+            
       }
     ]
   }
